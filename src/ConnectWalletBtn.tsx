@@ -6,7 +6,9 @@ export default function ConnectButton() {
 
   return (
     <>
-      <button onClick={() => open()}>Open Connect Modal</button>
+      <button onClick={() => open()} style={{ fontSize: "18px" }}>
+        Open Connect Modal
+      </button>
     </>
   );
 }
