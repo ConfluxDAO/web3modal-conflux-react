@@ -1,23 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import logo from "./logo.png";
+import "./App.css";
+import { useWeb3Modal } from "@web3modal/wagmi/react";
+import ConnectButton from "./ConnectWalletBtn";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <p>React Demo</p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Using WalletConnect on Conflux eSpace Dapp
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ConnectButton />
       </header>
     </div>
   );
